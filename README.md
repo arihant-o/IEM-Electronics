@@ -1,6 +1,6 @@
 # IEM-Electronics
 
-Welcome to the GitHub repository for the electronics projects of IEM. This repository will house all the code, schematics, documentation, etc. related to the electronics systems in our vehicle. Below you can find an overview of the different projects within this repository:
+Welcome to the GitHub repository for the electronics projects within IEM. This repository will house all the code, schematics, documentation, etc. related to the electronics systems in our vehicle. Below you can find an overview of the different projects within this repository:
 
 ## Projects
 
