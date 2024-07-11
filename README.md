@@ -33,3 +33,5 @@ The Telemetry system is responsible for collecting and transmitting crutial data
 - **Software**: The code for data acquisition, processing, and wireless communication.
 - **Schematics**: Circuit schematics and the PCB layout for the telemetry hardware.
 - **Documentation**: This will include the data formats, transmission protocols, and integration guidelines.
+
+The OneNote also shows more detail of these systems, if filled out. 
