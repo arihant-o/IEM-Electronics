@@ -34,4 +34,10 @@ The Telemetry system is responsible for collecting and transmitting crutial data
 - **Schematics**: Circuit schematics and the PCB layout for the telemetry hardware.
 - **Documentation**: This will include the data formats, transmission protocols, and integration guidelines.
 
+### 6. Battery Management System *NEW*
+The Battery Management System is essential for the monitoring and control of the custom battery used in our excellent vehicle, boasting industry-leading performance-per-watt (insert vague and bullshit graphs - Apple knows a lot about it). Protection and conditioning must be implemented to comply with competition regulations and ensure Paul Norman (and the EEE department) don't lose their shit. 
+- **Software**: As a new project, this will involve writing C code for the microcontroller responsible for translating cell data to the CAN bus interface.
+- **Schematic**: A highly original design with our humble logo plasted all over it - maybe clarkson makes an appearance RIP Jezza, Hamster and Captain Slow it was a fantastic 22 years.
+- **Documentation**: The above? Legal, standards, datasheets?
+
 The OneNote also shows more detail of these systems, if filled out. 
