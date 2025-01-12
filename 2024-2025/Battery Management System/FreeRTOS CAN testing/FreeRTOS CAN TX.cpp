@@ -38,8 +38,15 @@ void ISR_toggleLED() {
 }
 
 void setup() {
-  
-  Can.begin();
+  pinMode(A4, INPUT);
+
+  if(digitalRead(A4) == HIGH) { // pulled up to 3V3
+    Can.begin(true); // Automatic retransmission if no ACK received
+  }
+  else {
+    Can.begin();
+  }
+
   Can.setBaudRate(500000);
 
   Serial.begin(115200);
