@@ -1,0 +1,402 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "7e188e69-6af7-48ae-9f35-f350fedd0bd2")
+	(paper "A4")
+	(title_block
+		(title "IEM - Battery Management System")
+		(date "2024-12-21")
+		(rev "Rev 1.2")
+		(company "Imperial Eco Marathon")
+		(comment 1 "Designed by Anthony Ng")
+		(comment 2 "Reviewed by ")
+	)
+	(lib_symbols)
+	(rectangle
+		(start 46.99 114.3)
+		(end 54.61 156.21)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 1)
+		)
+		(uuid 1da323a6-0bb2-4a44-b26e-b342fcaebedf)
+	)
+	(rectangle
+		(start 114.3 100.33)
+		(end 139.7 102.87)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 0 0 1)
+		)
+		(uuid 1dc5d067-2296-41d2-982b-bf22caa5a9c5)
+	)
+	(rectangle
+		(start 97.79 63.5)
+		(end 105.41 88.9)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 0 0 1)
+		)
+		(uuid 32369d41-d0d1-4fd9-af8a-0059263f68c2)
+	)
+	(rectangle
+		(start 114.3 49.53)
+		(end 191.77 52.07)
+		(stroke
+			(width 0)
+			(type default)
+			(color 204 102 0 1)
+		)
+		(fill
+			(type color)
+			(color 204 102 0 1)
+		)
+		(uuid 3a0b2367-8817-4ae0-a54b-3f5c993c5744)
+	)
+	(rectangle
+		(start 203.2 100.33)
+		(end 228.6 102.87)
+		(stroke
+			(width 0)
+			(type default)
+			(color 132 132 132 1)
+		)
+		(fill
+			(type color)
+			(color 132 132 132 1)
+		)
+		(uuid 42d0eac3-8fff-4c20-a68f-73406ac36e16)
+	)
+	(rectangle
+		(start 165.1 100.33)
+		(end 177.8 102.87)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 132 132 1)
+		)
+		(fill
+			(type color)
+			(color 0 132 132 1)
+		)
+		(uuid 4901eaf9-5e2c-4309-ba7a-5edb662d2e33)
+	)
+	(rectangle
+		(start 46.99 148.59)
+		(end 88.9 156.21)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 1)
+		)
+		(uuid 5da0479c-22b7-40e4-97c7-3ce660a5bcc4)
+	)
+	(rectangle
+		(start 165.1 119.38)
+		(end 190.5 121.92)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 132 132 1)
+		)
+		(fill
+			(type color)
+			(color 0 132 132 1)
+		)
+		(uuid 5e8ad8ee-1b08-41d9-a5b5-3be7d1b2abec)
+	)
+	(rectangle
+		(start 189.23 49.53)
+		(end 191.77 88.9)
+		(stroke
+			(width 0)
+			(type default)
+			(color 204 102 0 1)
+		)
+		(fill
+			(type color)
+			(color 204 102 0 1)
+		)
+		(uuid 97f15202-8344-4d98-9bd5-077cab525c02)
+	)
+	(rectangle
+		(start 46.99 46.99)
+		(end 54.61 88.9)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 0 0 1)
+		)
+		(uuid 9a7f0367-56d7-4ba5-affb-1127fe029c54)
+	)
+	(rectangle
+		(start 97.79 114.3)
+		(end 105.41 139.7)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 0 0 0 1)
+		)
+		(uuid a31adee5-148f-4f30-ac20-7c2514b9c905)
+	)
+	(rectangle
+		(start 46.99 46.99)
+		(end 88.9 54.61)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 0 0 1)
+		)
+		(uuid c19f4578-35e1-4243-91a9-b86686016211)
+	)
+	(rectangle
+		(start 114.3 151.13)
+		(end 199.39 153.67)
+		(stroke
+			(width 0)
+			(type default)
+			(color 204 102 0 1)
+		)
+		(fill
+			(type color)
+			(color 204 102 0 1)
+		)
+		(uuid d0b07cc5-97ed-4e1c-9687-e558b4912d2a)
+	)
+	(rectangle
+		(start 196.85 114.3)
+		(end 199.39 153.67)
+		(stroke
+			(width 0)
+			(type default)
+			(color 204 102 0 1)
+		)
+		(fill
+			(type color)
+			(color 204 102 0 1)
+		)
+		(uuid e1069a02-dc30-4d5d-8335-1c6676cc2df8)
+	)
+	(rectangle
+		(start 189.23 114.3)
+		(end 191.77 121.92)
+		(stroke
+			(width 0)
+			(type default)
+			(color 0 132 132 1)
+		)
+		(fill
+			(type color)
+			(color 0 132 132 1)
+		)
+		(uuid e1d0f8ae-98fc-45a8-a5e1-cd6ac483ef0b)
+	)
+	(text_box "Micro\ncontroller µC"
+		(exclude_from_sim no)
+		(at 177.8 88.9 0)
+		(size 25.4 25.4)
+		(margins 1.905 1.905 1.905 1.905)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "12898636-94bd-4e1e-bee8-8238d7b56c4f")
+	)
+	(text_box "Safety + Precharge"
+		(exclude_from_sim no)
+		(at 38.1 88.9 0)
+		(size 25.4 25.4)
+		(margins 1.905 1.905 1.905 1.905)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "195ec6b7-9575-41f5-808a-245a19fce18d")
+	)
+	(text_box "Battery Pack"
+		(exclude_from_sim no)
+		(at 88.9 88.9 0)
+		(size 25.4 25.4)
+		(margins 1.905 1.905 1.905 1.905)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "34a1f8a2-db18-45a0-b18b-1a7c4e303f8f")
+	)
+	(text_box "MAX14920"
+		(exclude_from_sim no)
+		(at 139.7 95.25 0)
+		(size 25.4 12.7)
+		(margins 1.905 1.905 1.905 1.905)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "4ad43545-d82c-4156-b12e-94e972cb59c4")
+	)
+	(text_box "Solid state Circuit breaker"
+		(exclude_from_sim no)
+		(at 88.9 139.7 0)
+		(size 25.4 25.4)
+		(margins 1.905 1.905 1.905 1.905)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "8ff6d924-6906-4af5-abf4-b2356533ed8d")
+	)
+	(text_box "CAN Bus"
+		(exclude_from_sim no)
+		(at 228.6 88.9 0)
+		(size 25.4 25.4)
+		(margins 1.905 1.905 1.905 1.905)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "9315a413-a92b-4afa-8e49-686586a5404f")
+	)
+	(text_box "Solid state Circuit breaker"
+		(exclude_from_sim no)
+		(at 88.9 38.1 0)
+		(size 25.4 25.4)
+		(margins 1.905 1.905 1.905 1.905)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "b8e65694-6096-46b8-98c6-5a0efe0f3817")
+	)
+	(text_box "Temperature Measurement"
+		(exclude_from_sim no)
+		(at 139.7 114.3 0)
+		(size 25.4 12.7)
+		(margins 1.905 1.905 1.905 1.905)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 0 1)
+		)
+		(fill
+			(type color)
+			(color 255 255 255 1)
+		)
+		(effects
+			(font
+				(size 2.54 2.54)
+				(color 255 0 0 1)
+			)
+		)
+		(uuid "bad5f353-4ccc-491e-8a42-0a271fc8751e")
+	)
+)

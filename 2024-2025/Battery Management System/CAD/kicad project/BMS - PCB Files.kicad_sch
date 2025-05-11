@@ -1,0 +1,424 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "e5f35354-676a-4242-a794-88c4297a3720")
+	(paper "A4")
+	(title_block
+		(title "IEM - Battery Management System")
+		(date "2025-01-13")
+		(rev "Rev 1.2")
+		(company "Imperial Eco Marathon")
+		(comment 1 "Designed by Anthony Ng")
+		(comment 2 "Reviewed by ")
+	)
+	(lib_symbols)
+	(text "This PDF documents the hardware implementation of the IEM BMS version 1.1 \n\nWhenever we use batteries, it is imperative that we must handle them with care, regardless of chemistry and capacity. To ensure they are\nused safely, we need a Battery Management System (BMS). This is responsible for protecting, monitoring and managing the battery and \nimplements several protection measures such as overvoltage and undervoltage protection, temperature protection and short circuit protection. \nThis project details the electronic systems used to provide this functionality.\n\nAt the heart of the BMS is the STM32L432KC microcontroller, in combination with various systems contribute to the effective protection and\nmanagement of a 13S Lithium-Ion battery pack. The system comprises of automatic protection, implemented with dedicated battery monitoring \nICs and microcontroller-based protection to provide redundant protection measures. Elements of this design have been inspired from commerical\nproducts, while other elements have been experimented both on breadboard and in simulation software such as LTSpice to validate its performance, \nbut this does not guarantee the proper and safe operation of this BMS, therefore must be used with care. \n\nDesign Specification\n\n	Mandatory:\n	> The following protections must be provided: undervoltage, overvoltage, overtemperautre and overcurrent protection. \n	> Passive cell balancing during both charging and discharging.\n	> Implement relay control and e-stop.\n	> Implement a drive circuit for the horn\n\n	Optional:\n	> Pre-charge circuit to limit inrush current\n	> Active cell balancing\n	> Missing cell detection\n	> Reverse polarity protection\n	> Microcontroller with CAN bus communication\n	> State of charge / capacity calculations"
+		(exclude_from_sim no)
+		(at 14.986 44.45 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "f2b97c6c-e0b9-412c-8b6b-d9386f51ad1e")
+	)
+	(text "To do:\n\n- CAN bus external connector\n\n- Connectors for battery and NTC\n\n- Test points\n\n- Power converter for active balancer module"
+		(exclude_from_sim no)
+		(at 16.002 123.19 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 0 0 0 1)
+			)
+			(justify left)
+		)
+		(uuid "fccbcb30-5434-4891-9073-c06ac7155e28")
+	)
+	(sheet
+		(at 571.5 482.6)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "1cfbbb18-603d-430f-b4b3-59c2370a5e6f")
+		(property "Sheetname" "BMS Protection Implementation"
+			(at 571.5 481.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Protection.kicad_sch"
+			(at 571.5 495.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "BMS - PCB Files"
+				(path "/e5f35354-676a-4242-a794-88c4297a3720"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 571.5 431.8)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3f79bd74-cc53-4e74-9a32-401468106666")
+		(property "Sheetname" "STM32L432KC"
+			(at 571.5 431.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "STM32L432KC.kicad_sch"
+			(at 571.5 445.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "BMS - PCB Files"
+				(path "/e5f35354-676a-4242-a794-88c4297a3720"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 546.1 431.8)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7c7bd350-3582-4e56-998e-df5ec1413be4")
+		(property "Sheetname" "Core Protection"
+			(at 546.1 431.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "AutoProtect.kicad_sch"
+			(at 546.1 445.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "BMS - PCB Files"
+				(path "/e5f35354-676a-4242-a794-88c4297a3720"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 546.1 482.6)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8f4566ac-9634-4b0d-ba8d-c70fd01c4be9")
+		(property "Sheetname" "Block Diagram"
+			(at 546.1 481.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Block_Diagram.kicad_sch"
+			(at 546.1 495.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "BMS - PCB Files"
+				(path "/e5f35354-676a-4242-a794-88c4297a3720"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 520.7 457.2)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "a4abdd7d-fe13-4199-b5c2-d7d1f401443d")
+		(property "Sheetname" "Balancing"
+			(at 520.7 456.4884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Balancing.kicad_sch"
+			(at 520.7 470.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "BMS - PCB Files"
+				(path "/e5f35354-676a-4242-a794-88c4297a3720"
+					(page "10")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 520.7 431.8)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "aa28a040-6959-43af-ae23-a047642dabfc")
+		(property "Sheetname" "Temperature Protection"
+			(at 520.7 431.0884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "TH_Protect.kicad_sch"
+			(at 520.7 445.0846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "BMS - PCB Files"
+				(path "/e5f35354-676a-4242-a794-88c4297a3720"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 546.1 457.2)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ab74a8a1-aca9-4d6f-985c-52d70662b4fe")
+		(property "Sheetname" "Communication Devices"
+			(at 546.1 456.4884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Communications.kicad_sch"
+			(at 546.1 470.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "BMS - PCB Files"
+				(path "/e5f35354-676a-4242-a794-88c4297a3720"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 571.5 457.2)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bbb4f03e-9211-4843-9983-fc4b44e7035e")
+		(property "Sheetname" "Power Conversion"
+			(at 571.5 456.4884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PowerConversion.kicad_sch"
+			(at 571.5 470.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "BMS - PCB Files"
+				(path "/e5f35354-676a-4242-a794-88c4297a3720"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 520.7 482.6)
+		(size 12.7 12.7)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "ed01bd9b-a070-467a-ba14-9abbad24be9d")
+		(property "Sheetname" "Current Measuring"
+			(at 520.7 481.8884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Current_Measure.kicad_sch"
+			(at 520.7 495.8846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "BMS - PCB Files"
+				(path "/e5f35354-676a-4242-a794-88c4297a3720"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

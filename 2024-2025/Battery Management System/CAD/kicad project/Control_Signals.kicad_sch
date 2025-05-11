@@ -1,0 +1,16 @@
+(kicad_sch
+	(version 20231120)
+	(generator "eeschema")
+	(generator_version "8.0")
+	(uuid "96164dd2-205e-4982-bf60-1906793040c3")
+	(paper "A2")
+	(title_block
+		(title "IEM - Battery Management System")
+		(date "2024-11-16")
+		(rev "Rev 1.0")
+		(company "Imperial Eco Marathon")
+		(comment 1 "Designed by Anthony Ng")
+		(comment 2 "Reviewed by [insert name]")
+	)
+	(lib_symbols)
+)
